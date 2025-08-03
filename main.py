@@ -10,5 +10,5 @@ async def send_post():
     message = "🔥 Это автоматический пост! Скоро здесь начнутся посты для твоего роста"
     await bot.send_message(chat_id=CHANNEL_USERNAME, text=message)
 
-if name == "__main__":
+if __name__ == "__main__":
     asyncio.run(send_post())
